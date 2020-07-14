@@ -90,7 +90,7 @@
 }
 
 .icons i {
-    
+
     padding-right: 10px;
 }
 
@@ -150,4 +150,16 @@
     width: 800px;
     height: 40px;
     border-radius: 10px;
+}
+
+.message {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  display: none;
+}
+
+.show {
+  display: block;
 }
