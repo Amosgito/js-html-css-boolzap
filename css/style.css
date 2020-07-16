@@ -61,7 +61,7 @@
 
 }
 
-.contacts .notifiche{
+.notifiche{
     background-color: rgb(101, 208, 250);
     height: 80px;
 }
@@ -78,7 +78,7 @@
     color: aqua;
 }
 
-.contacts .notifiche p {
+.notifiche p {
     color: gray;
     text-decoration: underline;
 }
@@ -162,6 +162,14 @@
   padding: 10px;
   border: 1px solid black;
   min-width: 100px;
+}
+
+.sent {
+  float: right;
+}
+
+.recieved {
+  float: left;
 }
 
 .show {
