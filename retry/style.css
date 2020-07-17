@@ -4,23 +4,202 @@
   box-sizing: border-box;
 }
 
+.floatR {
+
+  float: right;
+  clear: both;
+}
+
+.floatL {
+
+  float: left;
+  clear: both;
+}
+
 body {
+    
   background-color: beige;
   width: 100vw;
   height: 100vh;
+  display: flex;
 }
 
 header {
+    
   width: 100vw;
-  height: 100px;
+  height: 150px;
   background-color: green;
   z-index: -1;
+  position: fixed;
+}
+
+img {
+  width: 50px;
 }
 
 .container {
+    
   width: 70vw;
   height: 90vh;
   margin: auto;
   background-color: red;
-  z-index: 1;
+}
+
+
+/* ----------CONTAINER LEFT-------------- */
+.container-left {
+    
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-color: yellow;
+    position: relative;
+}
+
+.container-left .header {
+  height: 80px;
+  width: 100%;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-left .header i,
+.container-right .header i {
+
+  color: gray;
+}
+
+.container-right .header .logo {
+
+  display: flex;
+  align-items: center;
+}
+
+.container-right .header .logo > div {
+
+  padding-left: 20px;
+}
+
+.container-left .notify {
+
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+.container-left .notify .bell {
+
+  background-color: white;
+  border-radius: 50%;
+  margin: 10px 20px;
+}
+
+.container-left .notify .bell i {
+
+  font-size: 30px;
+  padding: 20px;
+  color: aquamarine;
+}
+
+.inputcontainer {
+  
+  background-color: white;
+  padding: 5px;
+}
+
+.inputcontainer .input {
+
+  padding: 5px;
+}
+
+.inputcontainer .input i {
+
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.inputcontainer .input input {
+
+  border: 0;
+  border-radius: 5px;
+  height: 40px;
+  width: 90%;
+  font-size: 20px;
+}
+
+.contacts-list .contact {
+
+  margin-top: 25px;
+  margin-left:15px;
+}
+
+/* -------CONTAINER RIGHT------------ */
+.container-right {
+    
+    float: right;
+    width: 60%;
+    height: 100%;
+    background-color: aqua;
+    position: relative;
+}
+
+.container-right .header {
+  height: 80px;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-right .header .logo,
+.container-left .header .logo {
+
+ padding-left: 30px;
+}
+
+.container-right .header .icons i,
+.container-left .header .icons i {
+
+  padding-right: 30px;
+  font-size: 25px;
+}
+
+.container-right .chat {
+
+  margin-top: 80px;
+  height: calc(100% - 60px);
+}
+
+.container-right .footer {
+
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: pink;
+}
+
+.container-right .footer i {
+
+  font-size: 25px;
+  padding: 0 30px;
+}
+
+.container-right .footer input {
+
+  width: 70%;
+  height: 30px;
+  border: 0;
+  border-radius: 10px;
 }
