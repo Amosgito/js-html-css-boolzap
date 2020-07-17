@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 100vw;
+  height: 100px;
+  background-color: green;
+  z-index: -1;
+}
+
+.container {
+  width: 70vw;
+  height: 90vh;
+  margin: auto;
+  background-color: red;
+  z-index: 1;
+}
